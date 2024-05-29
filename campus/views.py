@@ -14,22 +14,26 @@ def campus_data_view(request):
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSRNrFZy3HZqtvOQaM94XeGnIKNVVC0tge0g&s",
         "plane": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR14oasNG0ZjQt14aB4HBrP4peIfgcEvqIzZIQ8B4mIA&s",
         "data": [
-            "details": {
+            {
+                "key": "details",
                 "label": "Details",
                 "icon": "DescriptionIcon",
                 "url": "/details"
             },
-            "measures": {
+            {
+                "key": "measures",
                 "label": "Measures",
                 "icon": "BarChartIcon",
                 "url": "/measures"
             },
-            "kpis": {
+            {
+                "key": "kpis",
                 "label": "KPIS",
                 "icon": "TrendingUpIcon",
                 "url": "/kpis"
             },
-            "control": {
+            {
+                "key": "control",
                 "label": "Control",
                 "icon": "SecurityIcon",
                 "url": "/controls"
