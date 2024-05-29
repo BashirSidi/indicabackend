@@ -15,22 +15,22 @@ def campus_data_view(request):
         "plane": "",
         "details": {
             "label": "Details",
-            "icon": "file",
+            "icon": "DescriptionIcon",
             "url": "http://127.0.0.1:8000/campus/api/details/"
         },
         "measures": {
             "label": "Measures",
-            "icon": "chart",
+            "icon": "BarChartIcon",
             "url": "http://127.0.0.1:8000/campus/api/measures/"
         },
         "kpis": {
             "label": "KPIS",
-            "icon": "chart-line",
+            "icon": "TrendingUpIcon",
             "url": "http://127.0.0.1:8000/campus/api/kpis/"
         },
         "control": {
             "label": "Control",
-            "icon": "shield",
+            "icon": "SecurityIcon",
             "url": "http://127.0.0.1:8000/campus/api/controls/"
         }
     }
