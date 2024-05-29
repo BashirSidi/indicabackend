@@ -13,7 +13,7 @@ def campus_data_view(request):
         "company_name": "campus",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSRNrFZy3HZqtvOQaM94XeGnIKNVVC0tge0g&s",
         "plane": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR14oasNG0ZjQt14aB4HBrP4peIfgcEvqIzZIQ8B4mIA&s",
-        "data": {
+        "data": [
             "details": {
                 "label": "Details",
                 "icon": "DescriptionIcon",
@@ -34,7 +34,7 @@ def campus_data_view(request):
                 "icon": "SecurityIcon",
                 "url": "/controls"
             }
-        }
+        ]
     }
     return Response(campus_data, status=status.HTTP_200_OK)
 
