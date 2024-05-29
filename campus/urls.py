@@ -9,6 +9,6 @@ router.register('kpis', views.KPIViewSet, basename='kpi')
 router.register('controls', views.ControlViewSet, basename='control')
 
 urlpatterns = [
-    path('index/', views.campus_data_view, name='campus_data'),
+    path('index', views.campus_data_view, name='campus_data'),
     path('api/', include(router.urls)),
 ]
