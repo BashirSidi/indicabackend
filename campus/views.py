@@ -10,28 +10,30 @@ from .serializers import DetailSerializer, MeasureSerializer, KPISerializer, Con
 @api_view(['GET'])
 def campus_data_view(request):
     campus_data = {
-        "company_name": "",
-        "logo": "",
-        "plane": "",
-        "details": {
-            "label": "Details",
-            "icon": "DescriptionIcon",
-            "url": "http://127.0.0.1:8000/campus/api/details/"
-        },
-        "measures": {
-            "label": "Measures",
-            "icon": "BarChartIcon",
-            "url": "http://127.0.0.1:8000/campus/api/measures/"
-        },
-        "kpis": {
-            "label": "KPIS",
-            "icon": "TrendingUpIcon",
-            "url": "http://127.0.0.1:8000/campus/api/kpis/"
-        },
-        "control": {
-            "label": "Control",
-            "icon": "SecurityIcon",
-            "url": "http://127.0.0.1:8000/campus/api/controls/"
+        "company_name": "campus",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSRNrFZy3HZqtvOQaM94XeGnIKNVVC0tge0g&s",
+        "plane": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR14oasNG0ZjQt14aB4HBrP4peIfgcEvqIzZIQ8B4mIA&s",
+        "data": {
+            "details": {
+                "label": "Details",
+                "icon": "DescriptionIcon",
+                "url": "/details"
+            },
+            "measures": {
+                "label": "Measures",
+                "icon": "BarChartIcon",
+                "url": "/measures"
+            },
+            "kpis": {
+                "label": "KPIS",
+                "icon": "TrendingUpIcon",
+                "url": "/kpis"
+            },
+            "control": {
+                "label": "Control",
+                "icon": "SecurityIcon",
+                "url": "/controls"
+            }
         }
     }
     return Response(campus_data, status=status.HTTP_200_OK)
